@@ -5,11 +5,11 @@ using namespace std;
 
 class AnimalsInZoo {
 	private:
-		int numAnimals = 0;
-		Animal::animal = Animal::Animal;
-	public AnimalsInZoo(Animal::Animal, int numAnimals);
-	
-	AnimalsInZoo() : animal(Animal::Animal), numAnimals(0) {};
+		int numAnimals;
+		Animal animal;
+	public: 
+	AnimalsInZoo(Animal animal);
+	void display();
+	AnimalsInZoo();	
 
-
-}
+};

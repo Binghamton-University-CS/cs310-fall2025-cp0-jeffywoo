@@ -1,5 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
+#ifndef ANIMAL_H
+#define ANIMAL_H
 using namespace std;
 
 class Animal {
@@ -15,3 +17,4 @@ class Animal {
       unsigned int year_discovered = 0;
 };
 
+#endif

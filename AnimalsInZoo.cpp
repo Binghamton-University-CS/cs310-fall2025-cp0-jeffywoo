@@ -2,19 +2,25 @@
 #include <stdlib.h>
 #include "AnimalsInZoo.h"
 #include "Animal.h"
-using namespace std;
 
 
 
-AnimalsInZoo::AnimalsInZoo(Animal::Animal, int numAnimals) {
+AnimalsInZoo::AnimalsInZoo(Animal animalToAdd) {
+	numAnimals = 1;
+	animal = animalToAdd;
+	
+}
+
+AnimalsInZoo::AnimalsInZoo() {
 	numAnimals = 0;
 	
 }
 
-AnimalsInZoo::AnimalsInZoo(Animal::Animal, int numAnimals) {
-	numAnimals = 1;
-	animal = Animal::Animal
-	
+void AnimalsInZoo::display() {
+	std::cout<< "number of animals: " << numAnimals<<std::endl;
+	if (numAnimals == 1) {
+		animal.display();
+	}
 }
 
 	
